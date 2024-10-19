@@ -5,7 +5,7 @@ export default function HomePage() {
     <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c] text-white">
       <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16">
         <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
-          Francesco <span className="text-[hsl(280,100%,70%)]">Chiaramonte</span> App
+          Francesco <span className="text-[#7FFFD4]">Chiaramonte</span>
         </h1>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-8">
           <Link
@@ -15,8 +15,8 @@ export default function HomePage() {
           >
             <h3 className="text-2xl font-bold">Personal Information →</h3>
             <div className="text-lg">
-              Phone Number: (+39) 327 615 88 31
-              Personal Email: fran.chiaramonte0@gmail.com
+              Phone: (+39) 327 615 88 31
+              Email: fran.chiaramonte0@gmail.com
             </div>
           </Link>
           <Link
@@ -26,7 +26,9 @@ export default function HomePage() {
           >
             <h3 className="text-2xl font-bold">My Curriculum →</h3>
             <div className="text-lg">
-             <a href="https://drive.google.com/file/d/1SeBYWzrQ36qbmj94q5idKQPSbeU397dQ/view?usp=drive_link"> Show CV </a>
+             <Link
+              href={"https://drive.google.com/file/d/1SeBYWzrQ36qbmj94q5idKQPSbeU397dQ/view?usp=drive_link"} className="center"
+              />
             </div>
           </Link>
         </div>
