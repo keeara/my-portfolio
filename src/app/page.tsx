@@ -1,38 +1,94 @@
-import Link from "next/link";
+import Badge from "@/components/badge";
+import Social from "@/components/social";
+import React from "react";
 
-export default function HomePage() {
+const About: React.FC = () => {
+  const hobbies = [
+    "Photography",
+    "Video Editing ",
+    "Logo Design",
+    "Gaming",
+    "Travel",
+    "Cooking",
+    "Reading",
+    "Computer Building",
+    "JS Learning",
+    "Motorbikes",
+    "Android ROM Flashing",
+  ];
+  const socials = [
+    {
+      text: "LinkedIn",
+      href: "https://www.linkedin.com/in/francesco-chiaramonte-it/",
+      color: "text-blue-400",
+    },
+    {
+      text: "GitHub",
+      href: "https://github.com/keeara",
+      color: "text-white-300",
+    },
+    {
+      text: "Email",
+      href: "mailto:fran.chiaramonte0@gmail.com",
+      color: "text-green-200",
+    },
+    {
+      text: "(+39) 3276158831",
+      href: "tel:+393276158831",
+      color: "text-red-200",
+    },
+    {
+      text: "Resume",
+      href: "https://drive.google.com/file/d/1SeBYWzrQ36qbmj94q5idKQPSbeU397dQ/view?usp=drive_link",
+      color: "text-white-400",
+    },
+  ];
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c] text-white">
-      <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16">
-        <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
-          Francesco <span className="text-[#7FFFD4]">Chiaramonte</span>
-        </h1>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-8">
-          <Link
-            className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
-            href="https://create.t3.gg/en/usage/first-steps"
-            target="_blank"
-          >
-            <h3 className="text-2xl font-bold">Personal Information →</h3>
-            <div className="text-lg">
-              Phone: (+39) 327 615 88 31
-              Email: fran.chiaramonte0@gmail.com
-            </div>
-          </Link>
-          <Link
-            className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
-            href="https://create.t3.gg/en/introduction"
-            target="_blank"
-          >
-            <h3 className="text-2xl font-bold">My Curriculum →</h3>
-            <div className="text-lg">
-             <Link
-              href={"https://drive.google.com/file/d/1SeBYWzrQ36qbmj94q5idKQPSbeU397dQ/view?usp=drive_link"} className="center"
-              />
-            </div>
-          </Link>
+    <div className="flex flex-col gap-10">
+      <div className="flex flex-col gap-5">
+        <h1 className="text-7xl font-semibold">About</h1>
+        <p>
+          I’m a curious and passionate Software QA Specialist with a focus on
+          delivering high-quality results. I excel in exploratory testing,
+          uncovering bugs, and ensuring smooth user experience. Alongside QA, I
+          offer technical support expertise, assisting with troubleshooting and
+          resolving technical issues. My attention to detail, problem-solving
+          skills, and proactive mindset help me improve products and processes
+          while adapting quickly to meet project goals. I am a self-motivated
+          individual with a strong work ethic and a dedication to continuous
+          learning. I am committed to staying up-to-date with the latest
+          technologies and trends, and am always eager to learn new skills and
+          techniques. I am a team player, always willing to lend a hand and
+          collaborate with others to achieve common goals.
+        </p>
+      </div>
+      <div className="flex flex-col gap-5">
+        <h2 className="text-left text-3xl font-bold tracking-[-0.01em] md:text-5xl md:leading-[3rem]">
+          Hobbies
+        </h2>
+        <div className="flex flex-wrap gap-2">
+          {hobbies.map((hobby, index) => (
+            <Badge key={index} text={hobby} color="text-yellow-200" />
+          ))}
         </div>
       </div>
-    </main>
+      <div className="flex flex-col gap-5">
+        <h2 className="text-left text-3xl font-bold tracking-[-0.01em] md:text-5xl md:leading-[3rem]">
+          Socials and Contacts
+        </h2>
+        <div className="flex flex-wrap gap-2">
+          {socials.map((social, index) => (
+            <Social
+              key={index}
+              text={social.text}
+              href={social.href}
+              color={social.color}
+            />
+          ))}
+        </div>
+      </div>
+    </div>
   );
-}
+};
+
+export default About;
