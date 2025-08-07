@@ -29,11 +29,6 @@ export const socials = [
     color: "text-green-200",
   },
   {
-    text: "(+39) 3276158831",
-    href: "tel:+393276158831",
-    color: "text-red-200",
-  },
-  {
     text: "Resume",
     href: "https://drive.google.com/file/d/1SeBYWzrQ36qbmj94q5idKQPSbeU397dQ/view?usp=drive_link",
     color: "text-white-400",
