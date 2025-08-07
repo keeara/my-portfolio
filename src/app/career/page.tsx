@@ -1,38 +1,8 @@
 import Badge from "@/components/badge";
 import Experience from "@/components/experience";
+import { languages, skills } from "@/lib/data";
 
 export default function Career() {
-  const skills = [
-    "JIRA Confluence",
-    "PHP",
-    "XML",
-    "HTML",
-    "SQL",
-    "Manual Testing",
-    "Tech Support",
-    "Postman",
-    "SCRUM Framework",
-    "AGILE Methodologies",
-    "REST API",
-    "Documentation Writing",
-    "Mobile Testing",
-    "Web Testing",
-    "Detail Oriented",
-    "Agile Methodologies",
-    "Kibana (Backend Logs)",
-    "Mobile Testing",
-    "Web Testing",
-    "Documentation Writing",
-    "Detail Oriented",
-    "REST API",
-  ];
-
-  const languages = [
-    "Italian (Native Speaker)",
-    "English(C1)",
-    "Spanish(A1)",
-    "Portuguese(A1)",
-  ];
   return (
     <div className="flex flex-col gap-10">
       <h1 className="text-7xl font-semibold">Career</h1>

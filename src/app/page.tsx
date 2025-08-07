@@ -1,48 +1,9 @@
 import Badge from "@/components/badge";
 import Social from "@/components/social";
+import { hobbies, socials } from "@/lib/data";
 import React from "react";
 
 const About: React.FC = () => {
-  const hobbies = [
-    "Photography",
-    "Video Editing ",
-    "Logo Design",
-    "Gaming",
-    "Travel",
-    "Cooking",
-    "Reading",
-    "Computer Building",
-    "JS Learning",
-    "Motorbikes",
-    "Android ROM Flashing",
-  ];
-  const socials = [
-    {
-      text: "LinkedIn",
-      href: "https://www.linkedin.com/in/francesco-chiaramonte-it/",
-      color: "text-blue-400",
-    },
-    {
-      text: "GitHub",
-      href: "https://github.com/keeara",
-      color: "text-white-300",
-    },
-    {
-      text: "Email",
-      href: "mailto:fran.chiaramonte0@gmail.com",
-      color: "text-green-200",
-    },
-    {
-      text: "(+39) 3276158831",
-      href: "tel:+393276158831",
-      color: "text-red-200",
-    },
-    {
-      text: "Resume",
-      href: "https://drive.google.com/file/d/1SeBYWzrQ36qbmj94q5idKQPSbeU397dQ/view?usp=drive_link",
-      color: "text-white-400",
-    },
-  ];
   return (
     <div className="flex flex-col gap-10">
       <div className="flex flex-col gap-5">
