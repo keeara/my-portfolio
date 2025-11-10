@@ -8,7 +8,7 @@ export default function Experience({
   company: string;
   position: string;
   startDate: string;
-  endDate: string;
+  endDate?: string;
   description: string[];
 }) {
   return (
@@ -20,7 +20,7 @@ export default function Experience({
         </div>
         <div>
           <p className="text-sm">
-            {startDate} - {endDate}
+            {startDate} {endDate && `- ${endDate}`}
           </p>
         </div>
       </div>
