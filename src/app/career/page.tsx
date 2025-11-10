@@ -6,6 +6,20 @@ export default function Career() {
   return (
     <div className="flex flex-col gap-10">
       <h1 className="text-7xl font-semibold">Career</h1>
+      <h2 className="text-left text-3xl font-bold tracking-[-0.01em] md:text-5xl md:leading-[3rem]">
+        Ongoing Job
+      </h2>
+      <Experience
+        company="mySugr - Roche Diagnostics Spain (Sant Cugat del Valles)"
+        position="Software QA"
+        startDate="17/02/2025"
+        endDate="Present"
+        description={["Software QA @ mySugr - Roche Diagnostics Spain (Sant Cugat del Valles)"]}
+        isCurrent={true}
+      />
+      <h2 className="text-left text-3xl font-bold tracking-[-0.01em] md:text-5xl md:leading-[3rem]">
+        Past experiences
+      </h2>
       <Experience
         company="Satispay (Milan)"
         position="Software QA Specialist"
@@ -36,10 +50,9 @@ export default function Career() {
       <Experience
         company="Courses"
         position="Javascript Training"
-        startDate="08/2024"
-        endDate="Present"
+        startDate="6 months"
         description={[
-          "Studying the basic concept of Javascript, by training day by day on the language's fundamentals.",
+          "Completed a 6-month intensive training program covering Javascript's Fundamentals.",
         ]}
       />
       <h2 className="text-left text-3xl font-bold tracking-[-0.01em] md:text-5xl md:leading-[3rem]">
