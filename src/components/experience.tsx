@@ -4,12 +4,14 @@ export default function Experience({
   startDate,
   endDate,
   description,
+  isCurrent,
 }: {
   company: string;
   position: string;
   startDate: string;
   endDate?: string;
   description: string[];
+  isCurrent?: boolean;
 }) {
   return (
     <>
@@ -20,7 +22,7 @@ export default function Experience({
         </div>
         <div>
           <p className="text-sm">
-            {startDate} {endDate && `- ${endDate}`}
+            {startDate} {endDate && !isCurrent && `- ${endDate}`}
           </p>
         </div>
       </div>
