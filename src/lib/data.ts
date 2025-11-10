@@ -30,7 +30,7 @@ export const socials = [
   },
   {
     text: "Resume",
-    href: "https://drive.google.com/file/d/1SeBYWzrQ36qbmj94q5idKQPSbeU397dQ/view?usp=drive_link",
+    href: "https://drive.google.com/file/d/1K-EJyncRCEuz6qzATkRGj3ql0yJJiQyQ/view?usp=sharing",
     color: "text-white-400",
   },
 ];

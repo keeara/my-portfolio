@@ -15,7 +15,7 @@ export default function Menu() {
 
   const menuItems: MenuItem[] = [
     {
-      title: "About",
+      title: "About me",
       href: "/",
       icon: <CircleUserRound className="h-4 w-4" fill="#FFFFFF30" />,
     },
