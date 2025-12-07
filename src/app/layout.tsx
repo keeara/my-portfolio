@@ -2,7 +2,7 @@ import Menu from "@/components/menu";
 import "@/styles/globals.css";
 
 import { Inter, Rethink_Sans } from "next/font/google";
-import { Metadata } from "next/types";
+import type { Metadata } from "next/types";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -27,7 +27,9 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${inter.variable} ${rethink.variable}`}>
-      <body className="h-screen bg-[#1A1A1A] text-[#F2F3F4] max-w-4xl mx-auto">
+      <body
+        className={`h-screen bg-[#1A1A1A] text-[#F2F3F4] max-w-4xl mx-auto ${rethink.className}`}
+      >
         <Menu />
         <div
           className="px-4 pt-4 pb-10"

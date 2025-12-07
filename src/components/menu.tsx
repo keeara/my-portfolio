@@ -1,9 +1,9 @@
 "use client";
 
-import { BookMarked, Briefcase, CircleUserRound } from "lucide-react";
+import { Briefcase, CircleUserRound } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 type MenuItem = {
   title: string;
