@@ -30,10 +30,13 @@ export default function RootLayout({
       <body
         className={`h-screen bg-[#1A1A1A] text-[#F2F3F4] max-w-4xl mx-auto ${rethink.className}`}
       >
+        <header className="py-8 px-4">
+          <h1 className="text-4xl font-bold">Francesco Chiaramonte</h1>
+        </header>
         <Menu />
-        <div
+        <main
           className="px-4 pt-4 pb-10"
-        >{children}</div>
+        >{children}</main>
       </body>
     </html>
   );

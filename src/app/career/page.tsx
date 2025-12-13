@@ -4,11 +4,12 @@ import { languages, skills } from "@/lib/data";
 
 export default function Career() {
   return (
-    <div className="flex flex-col gap-10">
-      <h1 className="text-7xl font-semibold">Career</h1>
-      <h2 className="text-left text-3xl font-bold tracking-[-0.01em] md:text-5xl md:leading-[3rem]">
-        Ongoing Job
-      </h2>
+    <div className="bg-card-bg rounded-3xl p-8 shadow-lg backdrop-blur-sm">
+      <div className="flex flex-col gap-10">
+        <h1 className="text-5xl font-semibold">Career</h1>
+        <h2 className="text-3xl font-bold">
+          Ongoing Job
+        </h2>
       <Experience
         company="mySugr - Roche Diagnostics Spain (Sant Cugat del Valles)"
         position="Software QA"
@@ -66,22 +67,23 @@ export default function Career() {
         description={[]}
       />
 
-      <h2 className="text-left text-3xl font-bold tracking-[-0.01em] md:text-5xl md:leading-[3rem]">
+      <h2 className="text-3xl font-bold">
         Technical skills
       </h2>
       <div className="flex flex-wrap gap-2">
         {skills.map((skill, index) => (
-          <Badge key={index} text={skill} color="text-orange-300" />
+          <Badge key={index} text={skill} color="text-accent" />
         ))}
       </div>
-      <h2 className="text-left text-3xl font-bold tracking-[-0.01em] md:text-5xl md:leading-[3rem]">
+      <h2 className="text-3xl font-bold">
         Languages
       </h2>
       <div className="flex flex-wrap gap-2">
         {languages.map((language, index) => (
-          <Badge key={index} text={language} color="text-purple-300" />
+          <Badge key={index} text={language} color="text-accent" />
         ))}
       </div>
+    </div>
     </div>
   );
 }
