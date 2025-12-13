@@ -11,6 +11,7 @@ export default {
         border: 'hsl(var(--border))',
         accent: '#fc8181',
         'card-bg': 'rgba(44, 42, 62, 0.8)',
+        'inner-card-bg': 'rgba(30, 28, 48, 0.9)',
       },
     },
   },
