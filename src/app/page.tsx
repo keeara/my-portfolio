@@ -47,11 +47,11 @@ const About: React.FC = () => {
               color={social.color}
             />
           ))}
-        </div>
+          </div>
         </div>
       </div>
     </div>
   );
-};
+}
 
 export default About;

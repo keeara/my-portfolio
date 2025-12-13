@@ -6,7 +6,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        border: "rgba(255,255,255,0.12)",
+        background: 'hsl(var(--background))',
+        foreground: 'hsl(var(--foreground))',
+        border: 'hsl(var(--border))',
         accent: '#fc8181',
         'card-bg': 'rgba(44, 42, 62, 0.8)',
       },
