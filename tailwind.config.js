@@ -10,6 +10,7 @@ module.exports = {
       colors: {
         accent: '#fc8181',
         'card-bg': 'rgba(44, 42, 62, 0.8)',
+        border: 'rgba(255, 255, 255, 0.2)',
       },
     },
   },
