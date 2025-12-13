@@ -13,6 +13,10 @@ export default {
         'card-bg': 'rgba(44, 42, 62, 0.8)',
         'inner-card-bg': 'rgba(30, 28, 48, 0.9)',
       },
+      borderRadius: {
+        '4xl': '2rem',
+        '5xl': '2.5rem',
+      },
     },
   },
   plugins: [],

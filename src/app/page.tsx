@@ -6,9 +6,9 @@ import React from "react";
 const About: React.FC = () => {
   return (
     <>
-      <div className="bg-card-bg rounded-3xl p-6 shadow-lg backdrop-blur-sm flex flex-col gap-4">
+      <div className="bg-card-bg rounded-5xl p-6 shadow-lg backdrop-blur-sm flex flex-col gap-4">
         <h1 className="text-5xl font-semibold px-2">About me</h1>
-        <div className="bg-inner-card-bg rounded-2xl p-6">
+        <div className="bg-inner-card-bg rounded-4xl p-6">
           <p className="text-lg">
             I’m a curious and passionate Software QA Specialist with a focus on
             delivering high-quality results. I excel in exploratory testing,
@@ -25,11 +25,11 @@ const About: React.FC = () => {
           </p>
         </div>
       </div>
-      <div className="bg-card-bg rounded-3xl p-6 shadow-lg backdrop-blur-sm flex flex-col gap-4">
+      <div className="bg-card-bg rounded-5xl p-6 shadow-lg backdrop-blur-sm flex flex-col gap-4">
         <h2 className="text-3xl font-bold px-2">
           Hobbies
         </h2>
-        <div className="bg-inner-card-bg rounded-2xl p-6">
+        <div className="bg-inner-card-bg rounded-4xl p-6">
           <div className="flex flex-wrap gap-2">
             {hobbies.map((hobby, index) => (
               <Badge key={index} text={hobby} color="text-accent" />
@@ -37,11 +37,11 @@ const About: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="bg-card-bg rounded-3xl p-6 shadow-lg backdrop-blur-sm flex flex-col gap-4">
+      <div className="bg-card-bg rounded-5xl p-6 shadow-lg backdrop-blur-sm flex flex-col gap-4">
         <h2 className="text-3xl font-bold px-2">
           Socials and Contacts
         </h2>
-        <div className="bg-inner-card-bg rounded-2xl p-6">
+        <div className="bg-inner-card-bg rounded-4xl p-6">
           <div className="flex flex-wrap gap-2">
             {socials.map((social, index) => (
               <Social

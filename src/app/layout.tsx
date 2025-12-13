@@ -31,7 +31,7 @@ export default function RootLayout({
         className={`h-screen bg-[#121414] text-[#F2F3F4] max-w-4xl mx-auto ${rethink.className}`}
       >
         <header className="p-4">
-          <div className="bg-card-bg rounded-3xl p-6 shadow-lg backdrop-blur-sm">
+          <div className="bg-card-bg rounded-5xl p-6 shadow-lg backdrop-blur-sm">
             <h1 className="text-4xl font-bold text-center">Francesco Chiaramonte</h1>
           </div>
         </header>

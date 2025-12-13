@@ -5,9 +5,9 @@ import { languages, skills } from "@/lib/data";
 export default function Career() {
   return (
     <>
-      <div className="bg-card-bg rounded-3xl p-6 shadow-lg backdrop-blur-sm flex flex-col gap-4">
+      <div className="bg-card-bg rounded-5xl p-6 shadow-lg backdrop-blur-sm flex flex-col gap-4">
         <h2 className="text-3xl font-bold px-2">Ongoing Job</h2>
-        <div className="bg-inner-card-bg rounded-2xl p-6">
+        <div className="bg-inner-card-bg rounded-4xl p-6">
           <Experience
             company="mySugr - Roche Diagnostics Spain (Sant Cugat del Valles)"
             position="Software QA"
@@ -21,9 +21,9 @@ export default function Career() {
         </div>
       </div>
 
-      <div className="bg-card-bg rounded-3xl p-6 shadow-lg backdrop-blur-sm flex flex-col gap-4">
+      <div className="bg-card-bg rounded-5xl p-6 shadow-lg backdrop-blur-sm flex flex-col gap-4">
         <h2 className="text-3xl font-bold px-2">Past experiences</h2>
-        <div className="bg-inner-card-bg rounded-2xl p-6 flex flex-col gap-4">
+        <div className="bg-inner-card-bg rounded-4xl p-6 flex flex-col gap-4">
           <Experience
             company="Satispay (Milan)"
             position="Software QA Specialist"
@@ -62,9 +62,9 @@ export default function Career() {
         </div>
       </div>
 
-      <div className="bg-card-bg rounded-3xl p-6 shadow-lg backdrop-blur-sm flex flex-col gap-4">
+      <div className="bg-card-bg rounded-5xl p-6 shadow-lg backdrop-blur-sm flex flex-col gap-4">
         <h2 className="text-3xl font-bold px-2">Studies</h2>
-        <div className="bg-inner-card-bg rounded-2xl p-6">
+        <div className="bg-inner-card-bg rounded-4xl p-6">
           <Experience
             company="Diploma"
             position="Computer Science and Telecommunications"
@@ -75,9 +75,9 @@ export default function Career() {
         </div>
       </div>
 
-      <div className="bg-card-bg rounded-3xl p-6 shadow-lg backdrop-blur-sm flex flex-col gap-4">
+      <div className="bg-card-bg rounded-5xl p-6 shadow-lg backdrop-blur-sm flex flex-col gap-4">
         <h2 className="text-3xl font-bold px-2">Technical skills</h2>
-        <div className="bg-inner-card-bg rounded-2xl p-6">
+        <div className="bg-inner-card-bg rounded-4xl p-6">
           <div className="flex flex-wrap gap-2">
             {skills.map((skill, index) => (
               <Badge key={index} text={skill} color="text-accent" />
@@ -86,9 +86,9 @@ export default function Career() {
         </div>
       </div>
 
-      <div className="bg-card-bg rounded-3xl p-6 shadow-lg backdrop-blur-sm flex flex-col gap-4">
+      <div className="bg-card-bg rounded-5xl p-6 shadow-lg backdrop-blur-sm flex flex-col gap-4">
         <h2 className="text-3xl font-bold px-2">Languages</h2>
-        <div className="bg-inner-card-bg rounded-2xl p-6">
+        <div className="bg-inner-card-bg rounded-4xl p-6">
           <div className="flex flex-wrap gap-2">
             {languages.map((language, index) => (
               <Badge key={index} text={language} color="text-accent" />
