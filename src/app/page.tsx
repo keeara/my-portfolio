@@ -38,7 +38,7 @@ const About: React.FC = () => {
           <h2 className="text-3xl font-bold">
             Socials and Contacts
           </h2>
-        <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-2">
           {socials.map((social, index) => (
             <Social
               key={index}
