@@ -4,12 +4,9 @@ import { languages, skills } from "@/lib/data";
 
 export default function Career() {
   return (
-    <div className="bg-card-bg rounded-3xl p-8 shadow-lg backdrop-blur-sm">
-      <div className="flex flex-col gap-10">
-        <h1 className="text-5xl font-semibold">Career</h1>
-
+    <>
+      <div className="bg-card-bg rounded-3xl p-8 shadow-lg backdrop-blur-sm flex flex-col gap-5">
         <h2 className="text-3xl font-bold">Ongoing Job</h2>
-
         <Experience
           company="mySugr - Roche Diagnostics Spain (Sant Cugat del Valles)"
           position="Software QA"
@@ -20,11 +17,10 @@ export default function Career() {
           ]}
           isCurrent={true}
         />
+      </div>
 
-        <h2 className="text-left text-3xl font-bold tracking-[-0.01em] md:text-5xl md:leading-[3rem]">
-          Past experiences
-        </h2>
-
+      <div className="bg-card-bg rounded-3xl p-8 shadow-lg backdrop-blur-sm flex flex-col gap-5">
+        <h2 className="text-3xl font-bold">Past experiences</h2>
         <Experience
           company="Satispay (Milan)"
           position="Software QA Specialist"
@@ -39,7 +35,6 @@ export default function Career() {
             "Provided internal support for teams via Slack, Freshdesk, and Zendesk.",
           ]}
         />
-
         <Experience
           company="Teleperformance Portugal (Lisbon)"
           position="Customer Care Specialist"
@@ -53,7 +48,6 @@ export default function Career() {
             "Achieved and maintained a high level of customer satisfaction and engagement through efficient problem-solving and effective communication.",
           ]}
         />
-
         <Experience
           company="Courses"
           position="Javascript Training"
@@ -62,11 +56,10 @@ export default function Career() {
             "Completed a 6-month intensive training program covering Javascript's Fundamentals.",
           ]}
         />
+      </div>
 
-        <h2 className="text-left text-3xl font-bold tracking-[-0.01em] md:text-5xl md:leading-[3rem]">
-          Studies
-        </h2>
-
+      <div className="bg-card-bg rounded-3xl p-8 shadow-lg backdrop-blur-sm flex flex-col gap-5">
+        <h2 className="text-3xl font-bold">Studies</h2>
         <Experience
           company="Diploma"
           position="Computer Science and Telecommunications"
@@ -74,14 +67,18 @@ export default function Career() {
           endDate="06/2017"
           description={[]}
         />
+      </div>
 
+      <div className="bg-card-bg rounded-3xl p-8 shadow-lg backdrop-blur-sm flex flex-col gap-5">
         <h2 className="text-3xl font-bold">Technical skills</h2>
         <div className="flex flex-wrap gap-2">
           {skills.map((skill, index) => (
             <Badge key={index} text={skill} color="text-accent" />
           ))}
         </div>
+      </div>
 
+      <div className="bg-card-bg rounded-3xl p-8 shadow-lg backdrop-blur-sm flex flex-col gap-5">
         <h2 className="text-3xl font-bold">Languages</h2>
         <div className="flex flex-wrap gap-2">
           {languages.map((language, index) => (
@@ -89,6 +86,6 @@ export default function Career() {
           ))}
         </div>
       </div>
-    </div>
+    </>
   );
 }
