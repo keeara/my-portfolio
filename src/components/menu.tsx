@@ -17,12 +17,12 @@ export default function Menu() {
     {
       title: "About me",
       href: "/",
-      icon: <CircleUserRound className="h-4 w-4" fill="#00000030" />,
+      icon: <CircleUserRound className="h-4 w-4" fill="#FFFFFF30" />,
     },
     {
       title: "Career",
       href: "/career",
-      icon: <Briefcase className="h-4 w-4" fill="#00000030" />,
+      icon: <Briefcase className="h-4 w-4" fill="#FFFFFF30" />,
     },
   ];
 
