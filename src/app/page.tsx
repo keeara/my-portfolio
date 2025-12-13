@@ -51,6 +51,7 @@ const About: React.FC = () => {
                 color={social.color}
               />
             ))}
+          </div>
         </div>
       </div>
     </>
