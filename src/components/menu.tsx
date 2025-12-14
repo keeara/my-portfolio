@@ -71,6 +71,7 @@ export default function Menu() {
             }}
             href={item.href}
             key={item.title}
+            replace
             className={`z-10 flex items-center justify-center gap-2 rounded-xl px-4 py-2 text-sm transition-colors md:px-6 md:text-base ${
               pathname === item.href ? "text-white" : "text-gray-400"
             }`}
