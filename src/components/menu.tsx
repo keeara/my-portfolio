@@ -46,7 +46,10 @@ export default function Menu() {
   }, [pathname]);
 
   return (
-    <div className="top-0 z-20 flex w-full items-center justify-center px-4 py-2">
+    <div
+      className="top-0 z-20 flex w-full items-center justify-center px-4 py-2"
+      role="navigation"
+    >
       <div
         ref={containerRef}
         className="relative flex items-center gap-2 rounded-2xl border border-white/20 bg-card-bg p-1 shadow-md backdrop-blur-md"
@@ -65,8 +68,9 @@ export default function Menu() {
             }}
             href={item.href}
             key={item.title}
-            className={`z-10 flex items-center justify-center gap-2 rounded-xl px-4 py-1 transition-colors ${
-              pathname === item.href ? "text-white" : "text-gray-400"
+            replace // This will prevent adding new entries to the history stack
+            className={`z-10 flex items-center justify-center gap-2 rounded-xl px-4 py-2 md:px-6 md:py-2 transition-colors duration-300 ease-in-out ${
+              pathname === item.href ? "text-white" : "text-gray-400 hover:text-white"
             }`}
           >
             <div>{item.icon}</div>
