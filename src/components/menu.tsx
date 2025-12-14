@@ -60,7 +60,9 @@ export default function Menu() {
         {/* Menu Items */}
         {menuItems.map((item, index) => (
           <Link
-            ref={(el) => (itemsRef.current[index] = el)}
+            ref={(el) => {
+              itemsRef.current[index] = el;
+            }}
             href={item.href}
             key={item.title}
             className={`z-10 flex items-center justify-center gap-2 rounded-xl px-4 py-1 transition-colors ${
