@@ -57,6 +57,6 @@ export const skills = [
 export const languages = [
   "Italian (Native Speaker)",
   "English(C1)",
-  "Spanish(A1)",
+  "Spanish(B2)",
   "Portuguese(A1)",
 ];
