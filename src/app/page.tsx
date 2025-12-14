@@ -10,18 +10,9 @@ const About: React.FC = () => {
         <h1 className="text-5xl font-semibold px-2">About me</h1>
         <div className="bg-inner-card-bg rounded-4xl p-6">
           <p className="text-lg">
-            I’m a curious and passionate Software QA Specialist with a focus on
-            delivering high-quality results. I excel in exploratory testing,
-            uncovering bugs, and ensuring a smooth user experience. Alongside QA, I
-            offer technical support expertise, assisting with troubleshooting and
-            resolving technical issues. My attention to detail, problem-solving
-            skills, and proactive mindset help me improve products and processes
-            while adapting quickly to meet project goals. I am a self-motivated
-            individual with a strong work ethic and a dedication to continuous
-            learning. I am committed to staying up-to-date with the latest
-            technologies and trends, and I am always eager to learn new skills and
-            techniques. I am a team player, always willing to lend a hand and
-            collaborate with others to achieve common goals.
+            I'm a passionate Software QA Specialist focused on delivering a great user experience. I excel at exploratory testing, digging deep to uncover bugs and proactively improving products and processes. My skills also include technical support, where I help quickly troubleshoot and resolve tricky issues. I'm a quick learner, detail-oriented, and thrive on team collaboration.
+
+            Here in my Blog you can find my Hobbies, some useful Links and also my personal Career page. Cheers!
           </p>
         </div>
       </div>

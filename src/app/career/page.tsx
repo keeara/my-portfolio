@@ -51,10 +51,16 @@ export default function Career() {
               "Achieved and maintained a high level of customer satisfaction and engagement through efficient problem-solving and effective communication.",
             ]}
           />
+        </div>
+      </div>
+
+      <div className="bg-card-bg rounded-5xl p-6 shadow-lg backdrop-blur-sm flex flex-col gap-4">
+        <h2 className="text-3xl font-bold px-2">Courses</h2>
+        <div className="bg-inner-card-bg rounded-4xl p-6">
           <Experience
-            company="Courses"
-            position="Javascript Training"
-            startDate="6 months"
+            company="Javascript Training"
+            position="6 months"
+            startDate="2021"
             description={[
               "Completed a 6-month intensive training program covering Javascript's Fundamentals.",
             ]}
