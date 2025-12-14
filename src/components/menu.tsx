@@ -26,7 +26,9 @@ const menuItems: MenuItem[] = [
 
 export default function Menu() {
   const pathname = usePathname();
-  const [sliderStyle, setSliderStyle] = useState({ opacity: 0 });
+  const [sliderStyle, setSliderStyle] = useState<React.CSSProperties>({
+    opacity: 0,
+  });
   const itemsRef = useRef<(HTMLAnchorElement | null)[]>([]);
   const containerRef = useRef<HTMLDivElement>(null);
 
