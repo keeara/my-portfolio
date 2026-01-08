@@ -32,7 +32,7 @@ export default function RootLayout({
       >
         <header className="p-4">
           <div className="bg-bubble-main rounded-5xl p-6 shadow-lg backdrop-blur-sm mx-4">
-            <h1 className="text-4xl font-bold text-center">Francesco Chiaramonte</h1>
+            <h1 className="text-4xl font-bold text-center text-heading">Francesco Chiaramonte</h1>
           </div>
         </header>
         <Menu />

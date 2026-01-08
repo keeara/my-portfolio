@@ -42,7 +42,7 @@ export default {
 				foreground: "hsl(var(--muted-foreground))"
   			},
   			accent: {
-				DEFAULT: "#9A6ED8",
+				DEFAULT: "#3ECFC3",
 				foreground: "hsl(var(--accent-foreground))"
   			},
   			destructive: {
@@ -59,8 +59,9 @@ export default {
 				"4": "hsl(var(--chart-4))",
 				"5": "hsl(var(--chart-5))"
 			},
-        "bubble-main": "#4B2278",
-        "inner-bubble": "#6A3DA1",
+        "bubble-main": "#145C57",
+        "inner-bubble": "#1F7F78",
+        "heading": "#1F7F78",
   		}
   	}
   },
