@@ -28,11 +28,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${rethink.variable}`}>
       <body
-        className={`h-screen bg-[#121414] text-white mx-auto ${rethink.className}`}
+        className={`h-screen bg-[#121414] text-white mx-auto max-w-4xl ${rethink.className}`}
       >
         <header className="p-4">
           <div className="bg-bubble-main rounded-5xl p-6 shadow-lg backdrop-blur-sm mx-4">
-            <h1 className="text-4xl font-bold text-center text-heading">Francesco Chiaramonte</h1>
+            <h1 className="text-4xl font-bold text-center text-accent">Francesco Chiaramonte</h1>
           </div>
         </header>
         <Menu />
