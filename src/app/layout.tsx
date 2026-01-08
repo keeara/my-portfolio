@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${rethink.variable}`}>
       <body
-        className={`h-screen bg-[#121414] text-[#F2F3F4] mx-auto ${rethink.className}`}
+        className={`h-screen bg-[#121414] text-white mx-auto ${rethink.className}`}
       >
         <header className="p-4">
           <div className="bg-bubble-main rounded-5xl p-6 shadow-lg backdrop-blur-sm mx-4">
