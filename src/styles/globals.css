@@ -16,7 +16,7 @@ li.career {
 
 li.career::before {
     content: "•";
-    color: #F87171;
+    color: #9A6ED8;
     padding-right: 1rem;
 }
 

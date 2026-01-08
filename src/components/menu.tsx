@@ -52,11 +52,11 @@ export default function Menu() {
     >
       <div
         ref={containerRef}
-        className="relative flex items-center gap-2 rounded-2xl border border-white/20 bg-card-bg p-1 shadow-md backdrop-blur-md"
+        className="relative flex items-center gap-2 rounded-2xl border border-white/20 bg-bubble-main p-1 shadow-md backdrop-blur-md"
       >
         {/* Sliding bubble */}
         <div
-          className="absolute h-[calc(100%-8px)] rounded-xl bg-inner-card-bg transition-all duration-300 ease-in-out"
+          className="absolute h-[calc(100%-8px)] rounded-xl bg-inner-bubble transition-all duration-300 ease-in-out"
           style={sliderStyle}
         />
 

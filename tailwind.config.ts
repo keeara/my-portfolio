@@ -42,7 +42,7 @@ export default {
 				foreground: "hsl(var(--muted-foreground))"
   			},
   			accent: {
-				DEFAULT: "#fc8181",
+				DEFAULT: "#9A6ED8",
 				foreground: "hsl(var(--accent-foreground))"
   			},
   			destructive: {
@@ -59,8 +59,8 @@ export default {
 				"4": "hsl(var(--chart-4))",
 				"5": "hsl(var(--chart-5))"
 			},
-        "card-bg": "rgba(44, 42, 62, 0.8)",
-        "inner-card-bg": "rgba(30, 28, 48, 0.9)",
+        "bubble-main": "#4B2278",
+        "inner-bubble": "#6A3DA1",
   		}
   	}
   },
