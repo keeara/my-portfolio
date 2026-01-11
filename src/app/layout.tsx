@@ -28,16 +28,16 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${rethink.variable}`}>
       <body
-        className={`h-screen bg-[#121414] text-[#F2F3F4] px-4 sm:px-6 ${rethink.className}`}
+        className={`h-screen bg-[#121414] text-[#F2F3F4] ${rethink.className}`}
       >
         <header className="p-4 max-w-7xl mx-auto">
-          <div className="bg-card-bg rounded-5xl p-6 shadow-lg backdrop-blur-sm">
+          <div className="bg-card-bg sm:rounded-5xl p-4 sm:p-6 shadow-lg backdrop-blur-sm">
             <h1 className="text-4xl font-bold text-center">Francesco Chiaramonte</h1>
           </div>
         </header>
         <Menu />
         <main
-          className="px-4 pt-4 pb-10 flex flex-col gap-4 max-w-7xl mx-auto"
+          className="pt-4 pb-10 flex flex-col gap-4 max-w-7xl mx-auto"
         >{children}</main>
       </body>
     </html>
