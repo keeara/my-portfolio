@@ -73,8 +73,8 @@ export default function Menu() {
               pathname === item.href ? "text-white" : "text-gray-400 hover:text-white"
             }`}
           >
-            <div>{item.icon}</div>
-            <div className="hidden md:block">{item.title}</div>
+            {item.icon}
+            <span className="hidden md:inline">{item.title}</span>
           </Link>
         ))}
       </div>
