@@ -52,7 +52,7 @@ export default function Menu() {
     >
       <div
         ref={containerRef}
-        className="relative flex items-center gap-2 rounded-2xl border border-white/20 bg-card-bg p-1 shadow-md backdrop-blur-md"
+        className="relative flex items-center gap-2 rounded-2xl border border-white/20 bg-card-bg p-1 shadow-md backdrop-blur-md overflow-hidden"
       >
         {/* Sliding bubble */}
         <div
@@ -73,8 +73,8 @@ export default function Menu() {
               pathname === item.href ? "text-white" : "text-gray-400 hover:text-white"
             }`}
           >
-            <div>{item.icon}</div>
-            <div className="hidden md:block">{item.title}</div>
+            {item.icon}
+            <span className="hidden md:inline">{item.title}</span>
           </Link>
         ))}
       </div>

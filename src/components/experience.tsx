@@ -15,12 +15,12 @@ export default function Experience({
 }) {
   return (
     <>
-      <div className="flex items-baseline justify-between">
-        <div>
+      <div className="flex flex-wrap items-baseline justify-between">
+        <div className="w-full sm:w-auto mb-2 sm:mb-0 text-center sm:text-left">
           <p className="text-xl font-semibold tracking-[-0.01em]">{company}</p>
           <p className="text-red-400">{position}</p>
         </div>
-        <div>
+        <div className="w-full sm:w-auto text-center sm:text-right">
           <p className="text-sm">
             {startDate} {endDate && !isCurrent && `- ${endDate}`}
           </p>
