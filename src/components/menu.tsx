@@ -33,16 +33,30 @@ export default function Menu() {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const activeIndex = menuItems.findIndex((item) => item.href === pathname);
-    const activeItem = itemsRef.current[activeIndex];
+    const updateSlider = () => {
+      const activeIndex = menuItems.findIndex((item) => item.href === pathname);
+      const activeItem = itemsRef.current[activeIndex];
+      const container = containerRef.current;
 
-    if (activeItem) {
-      setSliderStyle({
-        transform: `translateX(${activeItem.offsetLeft}px)`,
-        width: `${activeItem.offsetWidth}px`,
-        opacity: 1,
-      });
-    }
+      if (activeItem && container) {
+        const itemRect = activeItem.getBoundingClientRect();
+        const containerRect = container.getBoundingClientRect();
+
+        setSliderStyle({
+          transform: `translateX(${itemRect.left - containerRect.left}px)`,
+          width: `${itemRect.width}px`,
+          opacity: 1,
+        });
+      }
+    };
+
+    // Need a small timeout to ensure layout is stable
+    const timeoutId = setTimeout(updateSlider, 50);
+    window.addEventListener("resize", updateSlider);
+    return () => {
+      clearTimeout(timeoutId);
+      window.removeEventListener("resize", updateSlider);
+    };
   }, [pathname]);
 
   return (
@@ -52,11 +66,11 @@ export default function Menu() {
     >
       <div
         ref={containerRef}
-        className="relative flex items-center rounded-2xl border border-white/20 bg-card-bg p-1 shadow-md backdrop-blur-md overflow-hidden"
+        className="relative flex items-center rounded-2xl border border-white/20 bg-card-bg p-1.5 shadow-md backdrop-blur-md overflow-hidden"
       >
         {/* Sliding bubble */}
         <div
-          className="absolute left-0 top-1 bottom-1 rounded-xl bg-inner-card-bg transition-all duration-300 ease-in-out"
+          className="absolute left-0 top-1.5 bottom-1.5 rounded-xl bg-inner-card-bg transition-all duration-300 ease-in-out"
           style={sliderStyle}
         />
 
@@ -69,7 +83,7 @@ export default function Menu() {
             href={item.href}
             key={item.title}
             replace // This will prevent adding new entries to the history stack
-            className={`z-10 flex items-center justify-center rounded-xl m-1 px-4 py-2 md:px-6 md:py-2 transition-colors duration-300 ease-in-out ${
+            className={`z-10 flex h-10 min-w-[3.5rem] items-center justify-center rounded-xl px-4 md:px-6 transition-colors duration-300 ease-in-out ${
               pathname === item.href ? "text-white" : "text-gray-400 hover:text-white"
             }`}
           >
