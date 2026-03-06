@@ -56,7 +56,7 @@ export default function Menu() {
       >
         {/* Sliding bubble */}
         <div
-          className="absolute h-[calc(100%-8px)] rounded-xl bg-inner-card-bg transition-all duration-300 ease-in-out"
+          className="absolute left-0 inset-y-1 rounded-xl bg-inner-card-bg transition-all duration-300 ease-in-out"
           style={sliderStyle}
         />
 
