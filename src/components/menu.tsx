@@ -52,11 +52,11 @@ export default function Menu() {
     >
       <div
         ref={containerRef}
-        className="relative flex items-center gap-2 rounded-2xl border border-white/20 bg-card-bg p-1 shadow-md backdrop-blur-md overflow-hidden"
+        className="relative flex items-center rounded-2xl border border-white/20 bg-card-bg p-1 shadow-md backdrop-blur-md overflow-hidden"
       >
         {/* Sliding bubble */}
         <div
-          className="absolute left-0 inset-y-1 rounded-xl bg-inner-card-bg transition-all duration-300 ease-in-out"
+          className="absolute left-0 top-1 bottom-1 rounded-xl bg-inner-card-bg transition-all duration-300 ease-in-out"
           style={sliderStyle}
         />
 
@@ -69,12 +69,16 @@ export default function Menu() {
             href={item.href}
             key={item.title}
             replace // This will prevent adding new entries to the history stack
-            className={`z-10 flex items-center justify-center gap-2 rounded-xl px-4 py-2 md:px-6 md:py-2 transition-colors duration-300 ease-in-out ${
+            className={`z-10 flex items-center justify-center rounded-xl m-1 px-4 py-2 md:px-6 md:py-2 transition-colors duration-300 ease-in-out ${
               pathname === item.href ? "text-white" : "text-gray-400 hover:text-white"
             }`}
           >
-            {item.icon}
-            <span className="hidden md:inline">{item.title}</span>
+            <div className="flex items-center justify-center gap-2">
+              <div className="flex h-5 w-5 items-center justify-center">
+                {item.icon}
+              </div>
+              <span className="hidden md:inline">{item.title}</span>
+            </div>
           </Link>
         ))}
       </div>
