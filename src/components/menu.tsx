@@ -3,7 +3,8 @@
 import { Briefcase, CircleUserRound } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React, { useState, useRef, useEffect } from "react";
+import React from "react";
+import { motion } from "framer-motion";
 
 type MenuItem = {
   title: string;
@@ -26,53 +27,32 @@ const menuItems: MenuItem[] = [
 
 export default function Menu() {
   const pathname = usePathname();
-  const [sliderStyle, setSliderStyle] = useState<React.CSSProperties>({
-    opacity: 0,
-  });
-  const itemsRef = useRef<(HTMLAnchorElement | null)[]>([]);
-  const containerRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const activeIndex = menuItems.findIndex((item) => item.href === pathname);
-    const activeItem = itemsRef.current[activeIndex];
-
-    if (activeItem) {
-      setSliderStyle({
-        transform: `translateX(${activeItem.offsetLeft}px)`,
-        width: `${activeItem.offsetWidth}px`,
-        opacity: 1,
-      });
-    }
-  }, [pathname]);
 
   return (
     <div
       className="top-0 z-20 flex w-full items-center justify-center px-4 py-2"
       role="navigation"
     >
-      <div
-        ref={containerRef}
-        className="relative flex items-center gap-2 rounded-2xl border border-white/20 bg-card-bg p-1 shadow-md backdrop-blur-md overflow-hidden"
-      >
-        {/* Sliding bubble */}
-        <div
-          className="absolute h-[calc(100%-8px)] rounded-xl bg-inner-card-bg transition-all duration-300 ease-in-out"
-          style={sliderStyle}
-        />
-
+      <div className="relative flex items-center rounded-full border border-white/20 bg-card-bg p-1 shadow-md backdrop-blur-md overflow-hidden">
         {/* Menu Items */}
-        {menuItems.map((item, index) => (
+        {menuItems.map((item) => (
           <Link
-            ref={(el) => {
-              itemsRef.current[index] = el;
-            }}
             href={item.href}
             key={item.title}
             replace // This will prevent adding new entries to the history stack
-            className={`z-10 flex items-center justify-center gap-2 rounded-xl px-4 py-2 md:px-6 md:py-2 transition-colors duration-300 ease-in-out ${
-              pathname === item.href ? "text-white" : "text-gray-400 hover:text-white"
+            className={`relative z-10 flex items-center justify-center gap-2 rounded-full px-4 py-1.5 transition-colors duration-300 ease-in-out ${
+              pathname === item.href
+                ? "text-white"
+                : "text-gray-400 hover:text-white"
             }`}
           >
+            {pathname === item.href && (
+              <motion.div
+                layoutId="active-indicator"
+                className="absolute inset-0 z-[-1] rounded-full bg-inner-card-bg"
+                transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
+              />
+            )}
             {item.icon}
             <span className="hidden md:inline">{item.title}</span>
           </Link>
