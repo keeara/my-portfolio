@@ -40,7 +40,7 @@ export default function Menu() {
             href={item.href}
             key={item.title}
             replace // This will prevent adding new entries to the history stack
-            className={`relative z-10 flex items-center justify-center gap-2 rounded-full px-4 py-1.5 md:px-6 md:py-1.5 transition-colors duration-300 ease-in-out ${
+            className={`relative z-10 flex items-center justify-center gap-2 rounded-full px-4 py-1.5 transition-colors duration-300 ease-in-out ${
               pathname === item.href
                 ? "text-white"
                 : "text-gray-400 hover:text-white"

@@ -37,7 +37,7 @@ export default function RootLayout({
           </div>
         </header>
         <Menu />
-        <main className="pt-4 pb-10 flex flex-col gap-4 max-w-7xl mx-auto">
+        <main className="pt-4 pb-10 flex flex-col max-w-7xl mx-auto">
           <PageTransition>{children}</PageTransition>
         </main>
       </body>
