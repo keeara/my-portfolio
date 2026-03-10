@@ -1,4 +1,5 @@
 import Menu from "@/components/menu";
+import PageTransition from "@/components/page-transition";
 import "@/styles/globals.css";
 
 import { Inter, Rethink_Sans } from "next/font/google";
@@ -36,9 +37,9 @@ export default function RootLayout({
           </div>
         </header>
         <Menu />
-        <main
-          className="pt-4 pb-10 flex flex-col gap-4 max-w-7xl mx-auto"
-        >{children}</main>
+        <main className="pt-4 pb-10 flex flex-col gap-4 max-w-7xl mx-auto">
+          <PageTransition>{children}</PageTransition>
+        </main>
       </body>
     </html>
   );
