@@ -2,7 +2,7 @@
 
 # Sections
 * About
-* Carrers
+* Careers
 
 # Tech Stack
 * TypeScript
