@@ -1,6 +1,7 @@
 import globals from "globals";
 import js from "@eslint/js";
 import tseslint from "typescript-eslint";
+// @ts-expect-error - no types available
 import nextPlugin from "@next/eslint-plugin-next";
 
 export default [
