@@ -1,6 +1,6 @@
 "use client";
 
-import { Briefcase, CircleUserRound } from "lucide-react";
+import { Briefcase, CircleUserRound, FolderGit2 } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
@@ -22,6 +22,11 @@ const menuItems: MenuItem[] = [
     title: "Career",
     href: "/career",
     icon: <Briefcase className="h-4 w-4" />,
+  },
+  {
+    title: "Projects",
+    href: "/projects",
+    icon: <FolderGit2 className="h-4 w-4" />,
   },
 ];
 

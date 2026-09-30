@@ -3,6 +3,7 @@
 # Sections
 * About
 * Careers
+* Projects
 
 # Tech Stack
 * TypeScript
