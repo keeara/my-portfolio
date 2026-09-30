@@ -13,9 +13,7 @@ export default function Career() {
             position="Software QA"
             startDate="17/02/2025"
             endDate="Present"
-            description={[
-              "Software QA @ mySugr - Roche Diagnostics Spain (Sant Cugat del Valles)",
-            ]}
+            description={[]}
             isCurrent={true}
           />
         </div>

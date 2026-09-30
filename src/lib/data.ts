@@ -1,6 +1,6 @@
 export const hobbies = [
   "Photography",
-  "Video Editing ",
+  "Video Editing",
   "Logo Design",
   "Gaming",
   "Travel",
@@ -36,7 +36,8 @@ export const socials = [
 ];
 
 export const skills = [
-  "JIRA Confluence",
+  "JIRA",
+  "Confluence",
   "PHP",
   "XML",
   "HTML",
@@ -54,9 +55,45 @@ export const skills = [
   "Kibana (Backend Logs)",
 ];
 
+export const projects = [
+  {
+    name: "MinimalFace",
+    tagline: "Minimal digital watch face for Wear OS",
+    href: "https://github.com/keeara/MinimalFace",
+    links: [
+      {
+        text: "Download",
+        href: "https://github.com/keeara/MinimalFace/releases/latest",
+        color: "text-green-200",
+      },
+    ],
+    description: [
+      "Built entirely with the declarative Watch Face Format v4, with no code running on the watch.",
+      "Big, bold time inside a full-color pill, plus a date pill and two complications with progress bars.",
+      "16 color themes generated from Material 3 (HCT) seeds, selectable from the watch face editor.",
+      "Low-power Always-On mode with outlined pills.",
+    ],
+    tags: ["Wear OS 6+", "Watch Face Format v4", "XML", "Gradle", "Material 3"],
+    images: [
+      {
+        src: "/projects/minimalface/neon-plum.png",
+        alt: "MinimalFace with the Neon Plum theme",
+      },
+      {
+        src: "/projects/minimalface/mint-cyan.png",
+        alt: "MinimalFace with the Mint Cyan theme",
+      },
+      {
+        src: "/projects/minimalface/arctic-glacier.png",
+        alt: "MinimalFace with the Arctic Glacier theme and two complications",
+      },
+    ],
+  },
+];
+
 export const languages = [
   "Italian (Native Speaker)",
-  "English(C1)",
-  "Spanish(B2)",
-  "Portuguese(A1)",
+  "English (C1)",
+  "Spanish (B2)",
+  "Portuguese (A1)",
 ];
