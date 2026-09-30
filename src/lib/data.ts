@@ -1,6 +1,6 @@
 export const hobbies = [
   "Photography",
-  "Video Editing ",
+  "Video Editing",
   "Logo Design",
   "Gaming",
   "Travel",
@@ -36,7 +36,8 @@ export const socials = [
 ];
 
 export const skills = [
-  "JIRA Confluence",
+  "JIRA",
+  "Confluence",
   "PHP",
   "XML",
   "HTML",
@@ -92,7 +93,7 @@ export const projects = [
 
 export const languages = [
   "Italian (Native Speaker)",
-  "English(C1)",
-  "Spanish(B2)",
-  "Portuguese(A1)",
+  "English (C1)",
+  "Spanish (B2)",
+  "Portuguese (A1)",
 ];

@@ -26,13 +26,15 @@ export default function Experience({
           </p>
         </div>
       </div>
-      <ul className="career">
-        {description.map((item, index) => (
-          <li className="career" key={index}>
-            {item}
-          </li>
-        ))}
-      </ul>
+      {description.length > 0 && (
+        <ul className="career">
+          {description.map((item, index) => (
+            <li className="career" key={index}>
+              {item}
+            </li>
+          ))}
+        </ul>
+      )}
     </>
   );
 }

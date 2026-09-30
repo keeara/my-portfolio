@@ -2,8 +2,7 @@ import { test, expect } from '@playwright/test';
 
 test('has title', async ({ page }) => {
   await page.goto('/');
-  // According to memory, the site header with h1 is in layout.tsx
-  // We check for the name which should be unique
+  // The site header (h1) lives in layout.tsx
   await expect(page.getByRole('heading', { name: 'Francesco Chiaramonte' })).toBeVisible();
 });
 

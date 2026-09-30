@@ -10,11 +10,6 @@ export const env = createEnv({
     NODE_ENV: z
       .enum(["development", "test", "production"])
       .default("development"),
-    DATABASE_URL: z.string().url(),
-    DATABASE_USER: z.string(),
-    DATABASE_HOST: z.string(),
-    DATABASE_PASSWORD: z.string(),
-    DATABASE_DATABASE: z.string(),
   },
 
   /**
@@ -31,12 +26,7 @@ export const env = createEnv({
    * middlewares) or client-side so we need to destruct manually.
    */
   runtimeEnv: {
-    DATABASE_URL: process.env.DATABASE_URL,
     NODE_ENV: process.env.NODE_ENV,
-    DATABASE_USER: process.env.DATABASE_USER,
-    DATABASE_HOST: process.env.DATABASE_HOST,
-    DATABASE_PASSWORD: process.env.DATABASE_PASSWORD,
-    DATABASE_DATABASE: process.env.DATABASE_DATABASE,
 
     // NEXT_PUBLIC_CLIENTVAR: process.env.NEXT_PUBLIC_CLIENTVAR,
   },
