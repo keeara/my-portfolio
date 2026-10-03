@@ -14,8 +14,17 @@ test('career page loads', async ({ page }) => {
 test('projects page lists MinimalFace', async ({ page }) => {
   await page.goto('/projects');
   await expect(page.getByRole('heading', { name: 'MinimalFace' })).toBeVisible();
-  await expect(page.getByRole('link', { name: 'GitHub' })).toHaveAttribute(
+  await expect(page.getByRole('link', { name: 'GitHub' }).first()).toHaveAttribute(
     'href',
     'https://github.com/keeara/MinimalFace',
+  );
+});
+
+test('projects page lists Perfect Key', async ({ page }) => {
+  await page.goto('/projects');
+  await expect(page.getByRole('heading', { name: 'Perfect Key' })).toBeVisible();
+  await expect(page.getByRole('link', { name: 'GitHub' }).nth(1)).toHaveAttribute(
+    'href',
+    'https://github.com/keeara/perfect-key',
   );
 });

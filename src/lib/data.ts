@@ -89,6 +89,30 @@ export const projects = [
       },
     ],
   },
+  {
+    name: "Perfect Key",
+    tagline: "Minimal, fully offline keyboard for Android",
+    href: "https://github.com/keeara/perfect-key",
+    links: [],
+    description: [
+      "Customizable open-source keyboard with clean rounded keys, soft lighting and a compact key preview.",
+      "Near-black blue dark theme plus a light theme, following the system setting.",
+      "Inline emoji search, phone-number pad for number fields and autocorrect tuned for natural typing.",
+      "No internet permission: 100% offline, with strong haptics using the phone's vibration primitives.",
+    ],
+    tags: ["Android", "Kotlin", "Java", "Gradle", "Open Source"],
+    imageShape: "wide",
+    images: [
+      {
+        src: "/projects/perfect-key/keyboard-light.png",
+        alt: "Perfect Key, light theme",
+      },
+      {
+        src: "/projects/perfect-key/keyboard-dark.png",
+        alt: "Perfect Key, dark theme",
+      },
+    ],
+  },
 ];
 
 export const languages = [
