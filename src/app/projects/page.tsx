@@ -18,6 +18,7 @@ export default function Projects() {
               description={project.description}
               tags={project.tags}
               images={project.images}
+              imageShape={project.imageShape as "round" | "wide" | undefined}
             />
           </div>
         </div>

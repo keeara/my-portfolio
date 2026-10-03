@@ -9,6 +9,7 @@ export default function Project({
   description,
   tags,
   images,
+  imageShape = "round",
 }: {
   tagline: string;
   href: string;
@@ -16,6 +17,7 @@ export default function Project({
   description: string[];
   tags: string[];
   images: { src: string; alt: string }[];
+  imageShape?: "round" | "wide";
 }) {
   return (
     <>
@@ -42,9 +44,13 @@ export default function Project({
               key={index}
               src={image.src}
               alt={image.alt}
-              width={160}
-              height={160}
-              className="h-auto w-[30%] max-w-40 rounded-full"
+              width={imageShape === "wide" ? 540 : 160}
+              height={imageShape === "wide" ? 500 : 160}
+              className={
+                imageShape === "wide"
+                  ? "h-auto w-[45%] max-w-72 rounded-2xl"
+                  : "h-auto w-[30%] max-w-40 rounded-full"
+              }
             />
           ))}
         </div>
