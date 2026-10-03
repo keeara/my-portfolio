@@ -93,7 +93,13 @@ export const projects = [
     name: "Perfect Key",
     tagline: "Minimal, fully offline keyboard for Android",
     href: "https://github.com/keeara/perfect-key",
-    links: [],
+    links: [
+      {
+        text: "Download",
+        href: "https://github.com/keeara/perfect-key/releases/latest",
+        color: "text-green-200",
+      },
+    ],
     description: [
       "Customizable open-source keyboard with clean rounded keys, soft lighting and a compact key preview.",
       "Near-black blue dark theme plus a light theme, following the system setting.",
