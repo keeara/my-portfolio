@@ -74,20 +74,6 @@ export const projects = [
       "Low-power Always-On mode with outlined pills.",
     ],
     tags: ["Wear OS 6+", "Watch Face Format v4", "XML", "Gradle", "Material 3"],
-    images: [
-      {
-        src: "/projects/minimalface/neon-plum.png",
-        alt: "MinimalFace with the Neon Plum theme",
-      },
-      {
-        src: "/projects/minimalface/mint-cyan.png",
-        alt: "MinimalFace with the Mint Cyan theme",
-      },
-      {
-        src: "/projects/minimalface/arctic-glacier.png",
-        alt: "MinimalFace with the Arctic Glacier theme and two complications",
-      },
-    ],
   },
   {
     name: "Perfect Key",
@@ -107,17 +93,6 @@ export const projects = [
       "No internet permission: 100% offline, with strong haptics using the phone's vibration primitives.",
     ],
     tags: ["Android", "Kotlin", "Java", "Gradle", "Open Source"],
-    imageShape: "wide",
-    images: [
-      {
-        src: "/projects/perfect-key/keyboard-light.png",
-        alt: "Perfect Key, light theme",
-      },
-      {
-        src: "/projects/perfect-key/keyboard-dark.png",
-        alt: "Perfect Key, dark theme",
-      },
-    ],
   },
 ];
 
