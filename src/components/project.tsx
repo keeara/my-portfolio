@@ -1,6 +1,5 @@
 import Badge from "@/components/badge";
 import Social from "@/components/social";
-import Image from "next/image";
 
 export default function Project({
   tagline,
@@ -8,16 +7,12 @@ export default function Project({
   links,
   description,
   tags,
-  images,
-  imageShape = "round",
 }: {
   tagline: string;
   href: string;
   links: { text: string; href: string; color: string }[];
   description: string[];
   tags: string[];
-  images: { src: string; alt: string }[];
-  imageShape?: "round" | "wide";
 }) {
   return (
     <>
@@ -37,24 +32,6 @@ export default function Project({
           ))}
         </div>
       </div>
-      {images.length > 0 && (
-        <div className="flex justify-center gap-2 sm:gap-4 py-4">
-          {images.map((image, index) => (
-            <Image
-              key={index}
-              src={image.src}
-              alt={image.alt}
-              width={imageShape === "wide" ? 540 : 160}
-              height={imageShape === "wide" ? 500 : 160}
-              className={
-                imageShape === "wide"
-                  ? "h-auto w-[45%] max-w-72 rounded-2xl"
-                  : "h-auto w-[30%] max-w-40 rounded-full"
-              }
-            />
-          ))}
-        </div>
-      )}
       <ul className="career">
         {description.map((item, index) => (
           <li className="career" key={index}>
